@@ -1,0 +1,100 @@
+/*Style sheet for odin recipe assignment pages*/
+
+/*Link decoration removable*/
+
+a {
+    text-decoration: none;
+}
+
+body, html{
+        height: 100%;
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+        overflow-x: hidden;
+}
+
+/*Background image setup*/
+
+body {
+       font-family: Arial, Helvetica, sans-serif;
+       background-image: url("../img/recipebg.jpg");
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-attachment: fixed;
+       width: 100%;
+       height: auto;
+}
+
+/*Header alignment font css*/
+
+.header {
+     text-align: center;
+     background: hsl(17, 100%, 74%, .7);
+     color: hsl(0, 0%, 100%);
+     font-size: 58px;
+     width: auto;
+}
+
+.container {
+        margin: 50px;
+        background-color: hsl(0, 0%, 100%, .5);       
+}
+
+
+img {
+    width: 360px;
+    height: 360px;
+}
+
+.imgalign {
+    float: right;
+    padding: 50px;
+}
+
+p {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+h3{
+    text-decoration: underline;
+    padding: 25px;
+    font-size: 28px;
+}
+
+footer {
+    padding: 70px;
+    background-color: hsl(17, 100%, 74%, .7);
+    
+}
+
+.recipetip {
+    padding-bottom: 50px;
+}
+
+.topheader {
+    padding-top: 50px;
+}
+
+.list {
+    padding-left: 25px;
+}
+
+.row{
+    display: flex;
+}
+
+.column {
+    flex: 33.33%;
+    padding: 17px;
+    text-align: center;
+}
+
+li {
+   font-size: 18px;
+   margin-top: 2px;
+   margin-bottom: 2px;
+}
+
