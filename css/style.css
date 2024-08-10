@@ -1,6 +1,11 @@
 /*Style sheet for odin recipe assignment pages*/
 
 /*Link decoration removable*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 a {
     text-decoration: none;
@@ -8,7 +13,6 @@ a {
 
 body, html{
         height: 100%;
-        width: 100%;
         margin: 0%;
         padding: 0%;
 }
@@ -33,38 +37,45 @@ body {
      background: hsl(17, 100%, 74%, .7);
      color: hsl(0, 0%, 100%);
      font-size: 58px;
-     width: auto;
+     margin-top: 40px;
+     margin-bottom: 40px;
 }
 
 .container {
-        margin: 50px;
+        margin: 5px;
+        margin-bottom: 40px;
         background-color: hsl(0, 0%, 100%, .5);    
 }
 
-
-img {
-    width: 360px;
-    height: 360px;
-}
-
-.imgalign {
+.container>.imgalign {
+    display: flex;
+    height: 300px;
+    width: 300px;
     float: right;
-    padding: 50px;
+    margin: 20px;
+    position: relative;
+    flex-basis: fit-content;
+
 }
 
-p {
-    padding-left: 50px;
-    padding-right: 50px;
+.imgalign>img {
+    flex-shrink: inherit;
+    margin: 10px;
+}
+
+.container p {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 h3{
     text-decoration: underline;
-    padding: 25px;
+    padding: 15px;
     font-size: 28px;
 }
 
 footer {
-    padding: 70px;
+    padding: 40px;
     background-color: hsl(17, 100%, 74%, .7);
     
 }
@@ -73,23 +84,29 @@ footer {
     padding-bottom: 50px;
 }
 
-.topheader {
-    padding-top: 50px;
-}
+
 
 .list {
-    padding-left: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .row{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    
+    
 }
 
 .column {
-    flex: 30%;
-    padding: 17px;
     text-align: center;
+    margin: 10px;
+    flex: 30;
+}
+
+.column>img {
+    flex-shrink: inherit;
 }
 
 .textalign {
@@ -98,15 +115,24 @@ footer {
 
 li {
    font-size: 18px;
-   margin-top: 2px;
-   margin-bottom: 2px;
+   margin-bottom: 5px;
 }
 
-@media (max-width: 1080px) {
-    .row{
-        flex-direction: column;
-    }
+ol, ul {
+    padding-left: 20px;
 }
+
+@media only screen and (max-width: 768px) {
+    .container>.imgalign {
+        width: 100%;
+        float: none;
+    }
+} 
+    
+
+
+
+
 
 
 
