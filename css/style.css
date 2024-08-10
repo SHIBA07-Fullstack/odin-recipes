@@ -63,6 +63,13 @@ body {
     margin: 10px;
 }
 
+img:hover {
+    cursor: pointer;
+    opacity: .7;
+    animation-duration: .5s;
+    transition-delay: .5s;
+}
+
 .container p {
     padding-left: 20px;
     padding-right: 20px;
