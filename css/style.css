@@ -122,6 +122,10 @@ ol, ul {
     padding-left: 20px;
 }
 
+.rcptiphd {
+    text-align: center;
+}
+
 @media only screen and (max-width: 768px) {
     .container>.imgalign {
         width: 100%;
