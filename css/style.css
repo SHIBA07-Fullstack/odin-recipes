@@ -55,7 +55,7 @@ body {
         margin-bottom: 40px;
         background-color: hsl(0, 0%, 100%, .5); 
         width: 100%;  
-       
+        height: auto;
 }
 
 /* making recipe pages image float to right */
@@ -88,12 +88,11 @@ h3{
 footer {
     padding: 40px;
     background-color: hsl(17, 100%, 74%, .7);
-    width: 100%;
-    
+    width: 100%;  
 }
 
 .recipetip {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 
@@ -107,22 +106,14 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
-    
+    justify-content: center;
+    align-items: center;
 }
 
 .column {
     text-align: center;
     margin: 10px;
     flex: 30;
-}
-
-.column>img {
-    flex-shrink: inherit;
-}
-
-.textalign {
-    position: relative;
 }
 
 li {
