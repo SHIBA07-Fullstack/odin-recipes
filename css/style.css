@@ -65,7 +65,7 @@ body {
     height: 300px;
     width: 300px;
     margin: 1rem;
-    flex-shrink: inherit;
+    justify-content: center;
 }
 
 img:hover {
