@@ -48,6 +48,8 @@ body {
      width: 100%;
 }
 
+/* main container  */
+
 .container {
         margin: 5px;
         margin-bottom: 40px;
@@ -56,18 +58,15 @@ body {
        
 }
 
+/* making recipe pages image float to right */
+
 .container>.imgalign {
     float: right;
     height: 300px;
     width: 300px;
     margin: 1rem;
-
-}
-
-.imgalign>img {
     flex-shrink: inherit;
 }
-
 
 img:hover {
     cursor: pointer;
